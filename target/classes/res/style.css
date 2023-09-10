@@ -1,0 +1,105 @@
+body {
+    background: #333;
+    font-family: Arial;
+    color: #eee;
+}
+
+#test {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    top: 0;
+    left: 0;
+    height: 90%;
+    position: absolute;
+    border: 1px solid white;
+}
+#catched {
+    margin-left: calc(10px + 30%);
+    margin-top: 3%;
+    position: absolute;
+    overflow: auto;
+    width: 50%;
+    max-width: 50%;
+    text-align: left;
+    min-height: 2%;
+    max-height: calc(95% - 2em);
+    border: 1px solid black;
+}
+#remaining {
+    margin-left: calc(15px + 80%);
+    margin-top: 3%;
+    position: absolute;
+    overflow: auto;
+    width: calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    min-height: 2%;
+    text-align: center;
+    max-height: calc(95% - 2em);
+    border: 1px solid black;
+}
+#calls {
+    margin-left: 5px;
+    margin-top: 3%;
+    position: absolute;
+    overflow: auto;
+    width: 30%;
+    max-width: 30%;
+    min-height: 2%;
+    text-align: center;
+    max-height: calc(95% - 2em);
+    border: 1px solid black;
+}
+.args {
+    display: flex;
+    gap: 5px;
+}
+.arg {
+    font-style: italic;
+    color: #999;
+    font-size: .8em;
+}
+.method {
+    transition: .2s all;
+    display: flex;
+    white-space: nowrap;
+}
+
+.method:hover {
+    background: rgba(255, 255, 255, .3);
+}
+
+.incoming {
+    margin-left: 5px;
+}
+
+.methodNaming {
+    line-height: 2.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid black;
+}
+
+.incoming:before {
+    content: ">";
+    padding-right: 5px;
+    border-right: 1px solid black;
+    font-family: Calibri;
+    font-weight: 600;
+    color: limegreen;
+    font-size: 2em;
+}
+
+.outcoming {
+    margin-left: 5px;
+}
+
+.outcoming:before {
+    content: "<";
+    padding-right: 5px;
+    border-right: 1px solid black;
+    font-family: Calibri;
+    font-weight: 600;
+    color: red;
+    font-size: 2em;
+}

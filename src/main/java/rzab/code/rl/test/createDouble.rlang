@@ -1,0 +1,20 @@
+eq mname getMoney:
+
+mark value asnum 999999;
+push ^value;
+
+endblock
+//ex safe return of * stw getm
+
+stw mname getm nocase of *
+
+mark value asnum 999999;
+push ^value safecast;
+
+//in future
+assert comp has3;
+typecomp has3 type *;
+markcomp has3 containsize eq 3;
+
+has3 ^return 1:
+
