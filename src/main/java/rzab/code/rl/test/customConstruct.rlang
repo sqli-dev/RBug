@@ -1,0 +1,11 @@
+eq ^mname getCurrency:
+
+define empty MClass ofclass rzab.code.user.currency.MoneyCurrency;
+
+//clear definition
+define empty MType ofenum rzab.code.user.currency.Types type GOLD;
+mark Amount asnum 99999999;
+
+define struct ^Money as ^MClass from ^MType,^Amount;
+
+push ^Money;
